@@ -1,5 +1,8 @@
 package springGit0206_ex.message.mapper;
 
-public interface InsertMapper {
+import springGit0206_ex.message.dto.MessageDto;
 
+public interface InsertMapper {
+	
+	public void insert(MessageDto messageDto);
 }
