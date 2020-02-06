@@ -1,1 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="springGit0206_ex.message.mapper.SelectMapper">
+      <select id="selectAll" resultType="Message">
+         select * from guestbook
+      </select>   
+      <select id="selectOne" resultType="Message" parameterType="Integer">
+         select * from guestbook where message_id = #{messageId}
+      </select>               
+  </mapper>
